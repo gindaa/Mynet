@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddKaryawanActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Karyawan"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/nikkaryawan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="NIK"/>
+                <EditText
+                    android:id="@+id/passkaryawan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Password"/>
+                <EditText
+                    android:id="@+id/confpasskaryawan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="ConfPassword"/>
+                <EditText
+                    android:id="@+id/namekaryawan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Nama"/>
+                <EditText
+                    android:id="@+id/emailkaryawan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="email"/>
+                <EditText
+                    android:id="@+id/phonekaryawan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="phone"/>
+                <EditText
+                    android:id="@+id/roleid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Role_ID"/>
+                <EditText
+                    android:id="@+id/tanggallahirkr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Tanggal Lahir"/>
+                <EditText
+                    android:id="@+id/noktp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="No KTP"/>
+                <EditText
+                    android:id="@+id/nonpwp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="No NPWP"/>
+                <EditText
+                    android:id="@+id/norekening"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="No Rekening"/>
+                <EditText
+                    android:id="@+id/statuspernikahan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Status Pernikahan"/>
+                <EditText
+                    android:id="@+id/pendidikan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Pendidikan Terakhir"/>
+                <EditText
+                    android:id="@+id/bergabung"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Tanggal bergabung"/>
+                <EditText
+                    android:id="@+id/alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Alamat"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pas Foto Live "/>
+
+                    <Button
+                        android:id="@+id/takephoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take Picture"
+                        android:textColor="@color/white"
+                        android:backgroundTint="#2196F3"/>
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_launcher_background"
+                        android:id="@+id/photoview"
+                        android:scaleType="fitCenter"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unggah CV     "/>
+
+                    <Button
+                        android:id="@+id/takefile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Pilih File "
+                        android:textColor="@color/white"
+                        android:backgroundTint="#2196F3"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:text="SUBMIT"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

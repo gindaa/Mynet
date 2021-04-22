@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/listkaryawan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, " />
+
+        <TextView
+            android:id="@+id/welcomename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/listkaryawan"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#2196F3"
+        android:text="List Karyawan"
+        app:layout_constraintBottom_toTopOf="@+id/searchkaryawan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/searchkaryawan"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#2196F3"
+        android:text="Search Karyawan"
+        app:layout_constraintBottom_toTopOf="@+id/addkaryawan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addkaryawan"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#2196F3"
+        android:text="Add Karyawan"
+        app:layout_constraintBottom_toTopOf="@+id/addkaryawan2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addkaryawan2"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="#2196F3"
+        android:text="Detail Karyawan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#2196F3"
+        android:text="Log Out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addkaryawan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
